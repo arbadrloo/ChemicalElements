@@ -1,9 +1,7 @@
 public class MetalElement extends Element{
-    private String description;
-
-    public MetalElement(String symbol, String atomicNumber, String description, float atomicWeight) {
+        public MetalElement(String symbol, String atomicNumber, String description, float atomicWeight) {
         super(symbol, atomicNumber, atomicWeight);
-        this.description = description;
+
     }
 
     @Override
@@ -21,15 +19,11 @@ public class MetalElement extends Element{
         return super.getAtomicWeight();
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     @Override
     public String describeElement() {
-        return "Element Symbol: " + this.symbol + "\n"
+        return "this is a Metal element. metals are good conductors of heat and electricity \n"
+                + "Element Symbol: " + this.symbol + "\n"
                 + "Element Atomic Number: " + this.atomicNumber + "\n"
-                + "Element Atomic Weight: " + this.atomicWeight + "\n"
-                + "Details: " + this.description;
+                + "Element Atomic Weight: " + this.atomicWeight + "\n";
     }
 }
