@@ -1,9 +1,9 @@
 public abstract class Element {
     protected String symbol;
     protected String atomicNumber;
-    protected float atomicWeight;
+    protected double atomicWeight;
 
-    public Element(String symbol, String atomicNumber, float atomicWeight) {
+    public Element(String symbol, String atomicNumber, double atomicWeight) {
         this.symbol = symbol;
         this.atomicNumber = atomicNumber;
         this.atomicWeight = atomicWeight;
@@ -17,7 +17,7 @@ public abstract class Element {
         return atomicNumber;
     }
 
-    public float getAtomicWeight() {
+    public double getAtomicWeight() {
         return atomicWeight;
     }
     public abstract String describeElement();

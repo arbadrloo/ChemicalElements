@@ -1,5 +1,5 @@
 public class MetalElement extends Element{
-        public MetalElement(String symbol, String atomicNumber, String description, float atomicWeight) {
+        public MetalElement(String symbol, String atomicNumber, double atomicWeight) {
         super(symbol, atomicNumber, atomicWeight);
 
     }
@@ -15,7 +15,7 @@ public class MetalElement extends Element{
     }
 
     @Override
-    public float getAtomicWeight() {
+    public double getAtomicWeight() {
         return super.getAtomicWeight();
     }
 

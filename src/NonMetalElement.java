@@ -1,6 +1,6 @@
 public class NonMetalElement extends Element{
 
-    public NonMetalElement(String symbol, String atomicNumber, float atomicWeight) {
+    public NonMetalElement(String symbol, String atomicNumber, double atomicWeight) {
         super(symbol, atomicNumber, atomicWeight);
     }
     @Override
@@ -13,7 +13,7 @@ public class NonMetalElement extends Element{
     }
 
     @Override
-    public float getAtomicWeight() {
+    public double getAtomicWeight() {
         return super.getAtomicWeight();
     }
     @Override
